@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="/stylesheets/dashboard.css" />
+</head>
+
+
+<body>
+    <div class="sideBar">
+        <div class="dashboard">
+            <div class="logo">
+                <img src="/images/titleIcon.png" width="95px" alt="" />
+                <div class="branding">
+                    <p>FitHub</p>
+                    <small>journey to your wellness...</small>
+                </div>
+            </div>
+
+            <div class="subDashboard hideOnPhone">
+                <a href="/dashboard/profile">
+                    <div class="profile modules">
+                        <img src="/images/dashboardImages/profile.png" width="42px" alt="" />
+                        <h2 class="moduleName text-xl font-semibold">Profile</h2>
+                    </div>
+                </a>
+
+
+                <a href="/dashboard/workout">
+                    <div class="workout modules">
+                        <img src="/images/dashboardImages/workout.png" width="42px" alt="" />
+                        <h2 class="moduleName text-xl font-semibold">Workout</h2>
+                    </div>
+                </a>
+
+                <a href="/dashboard/diet-info">
+                    <div class="diet modules">
+                        <img src="/images/dashboardImages/dietInfo.png" width="42px" alt="" />
+                        <h2 class="moduleName text-xl font-semibold leading-none">Dietary Infomation</h2>
+                    </div>
+                </a>
+                <a href="/dashboard/meditation">
+                    <div class="meditation modules">
+                        <img src="/images/dashboardImages/meditation.png" width="42px" alt="" />
+                        <h2 class="moduleName text-xl font-semibold">Meditaion</h2>
+                    </div>
+                </a>
+
+                <a href="/dashboard/progress-tracker">
+
+                    <div class="tracker modules">
+                        <img src="/images/dashboardImages/tracker.png" width="42px" alt="" />
+                        <h2 class="moduleName text-xl font-semibold leading-none">Progress Tracker</h2>
+                    </div>
+                </a>
+                <div class="logout">
+                    <img src="/images/dashboardImages/logout.svg" alt="" />
+                    <a href="/logout">
+                        <p class="moduleName">Logout</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="topBar">
+            <div class="mobileLogo hideOnPc">
+                <div class="dropDownBars">
+                    <img class="dropDownBarsIcon" src="/images/menu.svg" alt="" />
+                    <div class="dropDownMenu hidden">
+                        <div class="phoneLogo">
+                            <img src="/images/titleIcon.png" width="95px" alt="" />
+                            <div class="branding">
+                                <p>FitHub</p>
+                                <small>journey to your wellness...</small>
+                            </div>
+                        </div>
+                        <a href="/dashboard/profile">
+                            <div class="profile modules">
+                                <img src="/images/dashboardImages/profile.png" width="42px" alt="" />
+                                <h2 class="moduleName">Profile</h2>
+                            </div>
+                        </a>
+
+
+                        <a href="/dashboard/workout">
+                            <div class="workout modules">
+                                <img src="/images/dashboardImages/workout.png" width="42px" alt="" />
+                                <h2 class="moduleName">Workout</h2>
+                            </div>
+                        </a>
+
+                        <a href="/dashboard/diet-info">
+                            <div class="diet modules">
+                                <img src="/images/dashboardImages/dietInfo.png" width="42px" alt="" />
+                                <h2 class="moduleName">Dietary Infomation</h2>
+                            </div>
+                        </a>
+                        <a href="/dashboard/meditation">
+                            <div class="meditation modules">
+                                <img src="/images/dashboardImages/meditation.png" width="42px" alt="" />
+                                <h2 class="moduleName">Meditaion</h2>
+                            </div>
+                        </a>
+
+                        <a href="/dashboard/progress-tracker">
+
+                            <div class="tracker modules">
+                                <img src="/images/dashboardImages/tracker.png" width="42px" alt="" />
+                                <h2 class="moduleName">Progress Tracker</h2>
+                            </div>
+                        </a>
+                        <div class="logoutPhone">
+                            <img src="/images/dashboardImages/logout.svg" alt="" />
+                            <p class="moduleName">Logout</p>
+                        </div>
+                    </div>
+                </div>
+                <img class="mobileTitleIcon" src="/images/titleIcon.png" alt="" width="50px" />
+            </div>
+            <div class="userIntro">
+                <div class="userName">
+                    <%= user.username %>
+                </div>
+                <div class="userImage">
+                    <img src="/images/dashboardImages/profileicon.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="mainContent ml-2 min-h-[90vh] flex justify-center items-center flex-col">
+            <div class="beginnerContent ">
+                <div class="flex justify-center  items-center p-5">
+                    <p class="text-xl font-semibold">Beginner's Exercises </p>
+                </div>
+            </div>
+            <div class="w-full min-h-[70vh] ">
+                <div class="h-[15vh] w-full  flex flex-row justify-center items-center">
+                    <div>
+                        <img src="/images/workoutImages/jumpingjacks.gif" width="75px" alt="">
+                    </div>
+                    <div>
+                        <p class="leading-none text-xl font-semibold">Jumping Jacks</p>
+                        <small class="leading-none">60s exercise | 10s break </small>
+                    </div>
+
+
+
+                </div>
+                <div class="h-[15vh] w-full  flex flex-row justify-center items-center">
+                    <div>
+                        <img src="/images/workoutImages/chairsquats.gif" width="75px" alt="">
+                    </div>
+                    <div>
+                        <p class="leading-none text-xl font-semibold">Chair Squats</p>
+                        <small class="leading-none">60s exercise | 10s break </small>
+                    </div>
+
+                </div>
+                <div class="h-[15vh] w-full  flex flex-row justify-center items-center">
+                    <div>
+                        <img src="/images/workoutImages/forwardlunge.gif" width="75px" alt="">
+                    </div>
+                    <div>
+                        <p class="leading-none text-xl font-semibold">Forward Lunge</p>
+                        <small class="leading-none">60s exercise | 10s break </small>
+                    </div>
+                </div>
+
+                <div class="h-[15vh] w-full  flex flex-row justify-center items-center">
+                    <div>
+                        <img src="/images/workoutImages/goodmorning.gif" width="75px" alt="">
+                    </div>
+                    <div>
+                        <p class="leading-none text-xl font-semibold">Good Morning</p>
+                        <small class="leading-none">60s exercise | 10s break </small>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="/javascripts/dashboard.js"></script>
+        <script src="/javascripts/bmi.js"></script>
+
+</body>
+
+</html>

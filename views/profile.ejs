@@ -1,0 +1,76 @@
+<% include ./partials/dashboard-header.ejs %>
+    <div class="profileContent ">
+        <div class="gender hidden" ><%=user.gender %></div>
+        <div class="image">
+            <img src="/images/dashboardImages/male.png" alt="" class="humanImg">
+        </div>
+        <div class="bmi">
+
+            <div class="box">
+
+                <div class="bmiContent">
+                    <h3>
+                        <div class="weight"><%=user.weight %> </div>kg
+                    </h3>
+                    <h5>Weight</h5>
+                </div>
+                <div class="bmiContent">
+                    <h3>
+                        <div class="height"><%=user.height %></div>ft
+                    </h3>
+                    <h5>Height</h5>
+                </div>
+            </div>
+            <div class="box1">
+                <p>Your BMI is</p>
+                <div class="bmiNumber">45</div>
+                <p>You are <strong id="nature">Obese</strong></p>
+
+                <div class="meter">
+                    <div class="underweight subindex">
+                        <div class="underWeightLine"></div>
+
+                        <p>Under Weight</p>
+                        <p>
+                            <18.5 </p>
+                    </div>
+                    <div class="normal subindex">
+                        <div class="normalLine "></div>
+
+                        <p>Normal</p>
+                        <p>18.5 - 25</p>
+                    </div>
+                    <div class="overWeight subindex ">
+                        <div class="overWeightLine"></div>
+
+                        <p>Over Weight</p>
+                        <p>25 - 39.9</p>
+
+                    </div>
+
+                    <div class="obese subindex ">
+                        <div class="obeseLine"></div>
+
+
+                        <p>Obese</p>
+                        <p>>40</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+    <% include ./partials/dashboard-footer.ejs %>

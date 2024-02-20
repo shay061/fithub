@@ -1,0 +1,38 @@
+<% include ./partials/header.ejs %>
+    <div class="gradiant">
+        <img src="images/Ellipse.svg" alt="" srcset="">
+        <img src="images/Ellipse.svg" alt="" srcset="">
+    </div>
+    <main>
+        <div class="loginmainContentBox">
+            <p>Welcome Back</p>
+            <form action="/login" method="post" class="loginForm">
+                <input type="text" name="username" placeholder="Enter Username">
+                <input type="password" name="password" placeholder="Enter Password">
+            
+            <div class="registerHere">
+                <p>Don't have an account, <a href="/register"><span>Register Here</span></a></p>
+            </div>
+            <div class="signin">
+                <input type="submit" value="Sign in">
+            </div>
+        </form>
+            <div class="seperation">
+                <div class="line"></div>
+                <p>or continue with</p>
+                <div class="line"></div>
+            </div>
+            <div class="loginOptions">
+                <img src="images/socials/GoogleBox.svg" alt="">
+                <img src="images/socials/AppleBox.svg" alt="">
+                <img src="images/socials/FacebookBox.svg" alt="">
+            </div>
+
+        </div>
+
+    </main>
+    <script src="login.js"></script>
+    </body>
+
+    </html>
+    <% include ./partials/footer.ejs %>
