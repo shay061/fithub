@@ -1,0 +1,232 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    ---primaryColor: #F3F3FD;
+    ---secondaryColor: black;
+    ---btncolor: white;
+    ---thirdColor: white;
+}
+
+.darkTheme {
+    ---primaryColor: black;
+    ---secondaryColor: white;
+    ---btncolor: white;
+    ---thirdColor: black;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(---primaryColor);
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    height: 67px;
+    /* border: 2px solid black; */
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo {
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border: 2px solid red; */
+    height: 67px;
+    min-width: 20%;
+}
+
+.logo img {
+    z-index: 100;
+    width: 215px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.navList {
+    padding: 0 5vw;
+    /* border: 2px solid blue; */
+    height: 67px;
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.navList li {
+    padding: 0px 15px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(---secondaryColor);
+
+}
+
+.navList li a {
+    text-decoration: none;
+    color: var(---secondaryColor);
+    position: relative;
+}
+
+.navList a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #1678F2;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: all 0.5s;
+}
+
+.navList a:hover::after {
+    width: 100%;
+}
+
+.loginReg {
+    overflow: hidden;
+    padding: 0px 15px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 11px;
+    gap: 10px;
+    width: 20%;
+    height: 67px;
+}
+
+.loginReg button,
+.getStarted {
+    background: linear-gradient(90deg, #3A8EF6 0%, #6F3AFA 95.69%);
+    padding: 6px 17px;
+    font-weight: 500;
+    color: var(---btncolor);
+    border-radius: 6px;
+    border: none;
+    font-size: 1.4vw;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.theme {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 46px;
+    height: 67px;
+
+}
+
+.theme img {
+    cursor: pointer;
+}
+
+.dropDown {
+    z-index: 10;
+    padding: 25px 0;
+    position: absolute;
+    right: 0px;
+    max-width: 255px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    width: 60vw;
+    gap: 10px;
+    display: none;
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+
+}
+
+.dropDown li {
+    padding: 0px 15px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(---secondaryColor);
+    cursor: pointer;
+    list-style: none;
+}
+
+.dropDown li a {
+    text-decoration: none;
+    color: var(---secondaryColor);
+}
+
+.open {
+    display: flex;
+}
+
+.hideOnScreen {
+    display: none;
+}
+
+.dropDownBtn {
+    width: 100%;
+}
+
+.dropDownBtn button {
+    background: linear-gradient(90deg, #3A8EF6 0%, #6F3AFA 95.69%);
+    padding: 9px 17px;
+    font-weight: 500;
+    color: var(---btncolor);
+    border-radius: 6px;
+    border: none;
+    font-size: 1.9vw;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+.dropMenuBars {
+    max-width: 90vw;
+    float: right;
+}
+
+    
+
+@media (max-width: 800px) {
+   
+
+    .mainContentBox {
+        width: 70vw;
+    }
+    .hideOnMobile {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 25px;
+    }
+    .dropMenuBars {
+        max-width: 90vw;
+        display: block;
+    }
+}

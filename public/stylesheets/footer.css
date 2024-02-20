@@ -1,0 +1,166 @@
+footer {
+
+    background-color: var(---thirdColor);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8vw;
+    /* align-items: center; */
+}
+
+.footerContent {
+    border-radius: 15px;
+    /* border: 2px solid red; */
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footerBox {
+    padding-top: 15px;
+    display: flex;
+    /* border: 2px solid black; */
+    gap: 25px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footerLogo,
+.branding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 15vw;
+    /* border: 2px solid black; */
+}
+
+.footerLogo {
+    gap: 14px;
+}
+
+.branding p {
+    background: linear-gradient(90deg, #3A8EF6 0%, #6F3AFA 95.69%);
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.branding small {
+    background: linear-gradient(90deg, #3A8EF6 0%, #6F3AFA 95.69%);
+    background-clip: text;
+    color: transparent;
+    font-size: 0.6rem;
+    font-style: italic;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.footerInfo {
+    padding-top: 35px;
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 20vh 20vh 20vh 35vh;
+    gap: 35px;
+}
+
+.footerInfo ul li {
+    list-style: none;
+    font-size: 0.7rem;
+}
+
+.footerHeading {
+    display: flex;
+    gap: 25px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #1678F2;
+}
+
+.footerSection {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.footerLists,
+.contactList {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    color: var(---secondaryColor);
+    cursor: pointer;
+    /* border: 2px solid black; */
+}
+
+.aboutContact span {
+    font-size: 0.7rem;
+}
+
+.aboutContact {
+    min-width: 25vh;
+}
+
+.seperationLine {
+    border: 1px solid rgb(185, 177, 177);
+    margin: 5px 15vw;
+    max-width: 70vw;
+}
+
+.copyright p {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    color: var(---secondaryColor);
+}
+
+@media (max-width: 800px) {
+    .footerBox {
+        gap: 2px;
+        flex-direction: column;
+        min-width: 90%;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid purple; */
+
+    }
+
+    .footerInfo {
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        padding-top: 20px;
+        min-width: 100%;
+        row-gap: 25px;
+        /* border: 2px solid purple; */
+
+    }
+
+    .footerSection {
+        align-items: center;
+        justify-content: center;
+        /* text-align: center; */
+        gap: 7px;
+        /* border: 3px solid purple; */
+    }
+
+    .aboutContact span {
+        font-size: 0.6rem;
+    }
+
+    .contactList {
+        padding-left: 20px;
+        gap: 7px;
+    }
+    
+}

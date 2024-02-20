@@ -1,0 +1,285 @@
+.gradiant img {
+    position: absolute;
+}
+
+.gradiant img:first-child {
+    /* border: 2px solid red; */
+    position: absolute;
+    top: -20px;
+    left: -15%;
+    width: 35vw;
+    height: 90vh;
+}
+
+.gradiant img:nth-child(3) {
+    position: absolute;
+    width: 35vw;
+    /* border: 2px solid red; */
+    left: 35%;
+    top: 55%;
+    height: 60vh;
+}
+
+.gradiant img:nth-child(2) {
+    position: absolute;
+    width: 35vw;
+    /* border: 2px solid red; */
+    right: 0;
+    bottom: -75%;
+    height: 50vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContainer {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+
+}
+
+.mainContentBox {
+    width: 50%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+
+
+}
+
+.companyIntro {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: clamp(2rem, 3rem, 4rem);
+    text-align: center;
+    font-weight: 500;
+    overflow: hidden;
+    color: var(---secondaryColor);
+    border: none;
+}
+
+.mainContainer p:first-child {
+    color: #1678F2;
+}
+
+.mainPicture {
+    padding-top: 55px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.mainPicture img {
+    width: 70%;
+}
+
+.getStarted {
+    margin-top: 19px;
+    width: 205px;
+    font-size: 1.7rem;
+
+}
+
+.featuresBox,
+.blogsBox {
+    padding-top: 3vh;
+    padding-left: 8vw;
+    padding-right: 6vw;
+    margin-top: 10vh;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 90px;
+}
+
+.featureContent,
+.blogsContent {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.bmi {
+    /* border: 2px solid red; */
+    overflow: hidden;
+    max-width: 25vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dietAdvice {
+    /* border: 2px solid red; */
+    max-width: 20vw;
+
+}
+
+.dailyProgress {
+    /* border: 2px solid red; */
+    max-width: 25vw;
+}
+
+.workout {
+    /* border: 2px solid red; */
+    max-width: 49vw;
+}
+
+.featureWeProvide,
+.blogHeading {
+    font-size: 1.7rem;
+    color: #1678F2;
+    font-weight: 600;
+
+}
+
+.bmi .bmiTitle span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(---secondaryColor);
+}
+
+.featureTitle {
+    padding-bottom: 5px;
+    font-size: 1.3rem;
+    color: var(---secondaryColor);
+    font-weight: 600;
+}
+
+.featureDescription {
+    color: #8A8585;
+    font-size: 0.9rem;
+}
+
+.blogsBox {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+
+}
+
+.blogsContent {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    /* border: 2px solid black; */
+    gap: 15px;
+
+}
+
+.blog {
+    border: 2px solid #dadaef;
+    max-width: 20vw;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.blog p {
+    padding: 0 35px;
+}
+
+.blog img {
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 15px;
+    /* height: 70%; */
+}
+
+.blogTitle {
+    color: var(---secondaryColor);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.blogDescription {
+    font-size: 0.6rem;
+    color: #8A8585;
+    margin-bottom: 3px;
+}
+
+
+@media (max-width: 800px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainContainer {
+        flex-wrap: wrap;
+        padding-top: 65px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainContentBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+
+
+    }
+
+    .companyIntro {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .mainPicture,
+    .mainPicture img {
+        width: 90%;
+        padding-top: 10px;
+    }
+
+    .featuresBox,
+    .blogsBox {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    .featureContent {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* gap: 19px; */
+    }
+
+    .featureContent div {
+        min-width: 70vw;
+    }
+
+    .blogsContent {
+        overflow: hidden;
+        padding: 5px;
+        gap: 9px;
+        max-width: 90vw;
+        grid-template-columns: 40vw 40vw;
+    }
+
+    .blog {
+        max-width: 50vw;
+    }
+
+    .blog p {
+        padding: 0 15px;
+    }
+
+}

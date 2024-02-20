@@ -1,0 +1,432 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    display: flex;
+}
+
+.sideBar {
+    z-index: 10;
+    background-color: #d7d7ff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 20vw;
+    /* border: 2px solid black; */
+    position: sticky;
+    justify-content: space-between;
+    padding-bottom: 35px;
+    padding-left: 2vw;
+
+
+}
+
+.dashboard {
+
+    /* border: 2px solid black; */
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.subDashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-size: 0.8rem;
+
+}
+
+.logo {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logo {
+    width: 5vw;
+    /* border: 2px solid black; */
+}
+
+.logo img {
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.branding {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: max-content;
+    /* border: 2px solid black; */
+}
+
+.branding p {
+    background: linear-gradient(90deg, #3A8EF6 0%, #6F3AFA 95.69%);
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.branding small {
+    background: linear-gradient(90deg, #3A8EF6 0%, #6F3AFA 95.69%);
+    background-clip: text;
+    color: transparent;
+    font-size: 0.4rem;
+    font-style: italic;
+}
+
+.modules {
+    cursor: pointer;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 7px;
+    /* border: 2px solid red; */
+    padding: 15px;
+
+}
+
+.modules img {
+    width: 30px;
+}
+
+.modules h2 {
+    font-size: 0.9em;
+}
+
+
+
+.logout {
+    padding: 15px;
+    /* border: 2px solid red; */
+    cursor: pointer;
+    /* padding-left: 2vw; */
+    display: flex;
+    gap: 10px;
+    margin-top: 16vh;
+    position: absolute;
+    bottom: 20px;
+}
+
+
+.topBar {
+    background-color: #d7d7ff;
+    border-radius: 7px;
+    display: flex;
+    justify-content: flex-end;
+    /* border: 2px solid red; */
+    display: flex;
+    /* height: 10vh; */
+    margin-left: 1vh;
+    padding: 5px 2vw;
+
+}
+
+.topBar .mobileLogo {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+
+}
+
+.userIntro {
+
+    gap: 10px;
+    /* border: 2px solid red; */
+    display: flex;
+
+}
+
+.userName {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.userImage {
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    /* width: 45px; */
+    overflow: hidden;
+    height: 7vh;
+
+}
+
+.userImage img {
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    width: 100vw;
+
+}
+
+.mainContent {
+    padding-top: 4vh;
+    padding-left: 15px;
+    /* border: 2px solid red; */
+    background-color: #d7d7ff;
+    margin-top: 5px;
+    border-radius: 15px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 15px;
+    min-height: calc(100vh - 10vh);
+
+}
+
+.dietInfoContent {
+    gap: 3vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* align-items: center; */
+
+}
+
+.dietInfoPreference {
+    /* border: 2px solid black; */
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.dietInfoPreference .boxes {
+    gap: 5vw;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.weightLoss,
+.musclesGain {
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 10px;
+    background-color: #f0f0f9;
+    height: 70vh;
+    width: 55vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+
+
+}
+
+.musclesGainImg {
+
+    height: 100%;
+    width: 100%;
+    background-image: url("/public/images/deitInfoImages/musclegain.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(244px);
+    -webkit-filter: blur(5px);
+}
+
+.weightLossImg {
+    height: 100%;
+    width: 100%;
+    background-image: url("/public/images/deitInfoImages/weightloss.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(1px);
+    -webkit-filter: blur(5px);
+}
+
+.musclesGainContent h2,
+.weightLossContent h2 {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgb(255, 255, 255);
+    font-weight: rgb(0, 0, 0) bold;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5vh;
+
+}
+
+.weightLossContent,
+.musclesGainContent {
+    position: absolute;
+    display: flex;
+    gap: 2vh;
+    color: white;
+    background-color: rgba(63, 61, 61, 0.4);
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+}
+
+.weightLossContent p,
+.musclesGainContent p {
+    padding-left: 1vw;
+    font-size: 1rem;
+}
+
+.subindex p {
+    padding: 0 25px 0 0;
+    /* padding: 15px; */
+    font-size: 1em;
+}
+
+.subindex {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.topBar .hideOnPc {
+    display: none;
+}
+
+.dropDownMenu {
+    /* padding-top: 3vh; */
+    position: absolute;
+    min-height: 100vh;
+    width: 50vw;
+    /* border: 2px solid black; */
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    transition: all ease 5sec;
+}
+
+.dropDownMenu .phoneLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    margin-bottom: 2vh;
+}
+
+.dropDownMenu .phoneLogo .branding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropDownMenu .phoneLogo .branding p {
+    font-size: 2rem;
+}
+
+.dropDownMenu .phoneLogo .branding small {
+    font-size: 0.8rem;
+}
+
+.dropDownMenu .logoutPhone {
+    margin-top: 1vh;
+    display: flex;
+    padding-left: 6vw;
+    gap: 4vw;
+    font-weight: 700;
+}
+
+.hidden {
+    display: none;
+}
+
+.open {
+    display: flex;
+}
+
+@media (max-width:800px) {
+
+
+    .logo img {
+        /* border: 2px solid red; */
+        z-index: 100;
+        /* width: 8vw; */
+    }
+
+
+    .dashboard {
+        display: none;
+        z-index: 10;
+    }
+
+    .dropDown {
+        display: block;
+        z-index: 10;
+    }
+
+    .sideBar {
+        display: none;
+        z-index: 10;
+    }
+
+    .topBar {
+        z-index: 10;
+        width: 100vw;
+        margin: 0;
+        border-radius: 0;
+        justify-content: space-between;
+    }
+
+    .mainContent {
+        /* border: 2px solid red; */
+        margin: 0;
+        padding-top: 20px;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+
+    }
+
+    .workoutPreference .boxes {
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid red; */
+        gap: 35px;
+
+    }
+
+    .hideOnePhone {
+        display: none;
+    }
+
+    .topBar .hideOnPc {
+        display: flex;
+        z-index: 10;
+    }
+
+}
